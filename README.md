@@ -1,5 +1,5 @@
 # QantasAirportApp
-This App using [Qantus API](https://api.qantas.com/flight/refData/airport) to show simple list of Airports and detail of selected Airport.
+This App using [Qantas API](https://api.qantas.com/flight/refData/airport) to show simple list of Airports and detail of selected Airport.
 
 # PREREQUISITES
 1. iOS 13.0+
