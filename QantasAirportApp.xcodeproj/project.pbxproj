@@ -1,0 +1,751 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C132B0DE278CF41500BC54C1 /* airport.json in Resources */ = {isa = PBXBuildFile; fileRef = C132B0DD278CF41500BC54C1 /* airport.json */; };
+		C132B0E0278CF4A800BC54C1 /* TestAirportDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C132B0DF278CF4A800BC54C1 /* TestAirportDataModel.swift */; };
+		C132B0E2278CF86B00BC54C1 /* SampleTestAirportData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C132B0E1278CF86B00BC54C1 /* SampleTestAirportData.swift */; };
+		C160E990278C0EC3005DDDE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C160E98F278C0EC3005DDDE5 /* AppDelegate.swift */; };
+		C160E992278C0EC3005DDDE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C160E991278C0EC3005DDDE5 /* SceneDelegate.swift */; };
+		C160E994278C0EC3005DDDE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C160E993278C0EC3005DDDE5 /* ViewController.swift */; };
+		C160E997278C0EC3005DDDE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C160E995278C0EC3005DDDE5 /* Main.storyboard */; };
+		C160E999278C0EC5005DDDE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C160E998278C0EC5005DDDE5 /* Assets.xcassets */; };
+		C160E99C278C0EC5005DDDE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C160E99A278C0EC5005DDDE5 /* LaunchScreen.storyboard */; };
+		C160E9A7278C0EC5005DDDE5 /* QantasAirportAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C160E9A6278C0EC5005DDDE5 /* QantasAirportAppTests.swift */; };
+		C160E9B1278C0EC5005DDDE5 /* QantasAirportAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C160E9B0278C0EC5005DDDE5 /* QantasAirportAppUITests.swift */; };
+		C160E9B3278C0EC5005DDDE5 /* QantasAirportAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C160E9B2278C0EC5005DDDE5 /* QantasAirportAppUITestsLaunchTests.swift */; };
+		C160E9C1278C10BE005DDDE5 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C160E9C0278C10BE005DDDE5 /* APIClient.swift */; };
+		C160E9C3278C10D2005DDDE5 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C160E9C2278C10D2005DDDE5 /* NetworkError.swift */; };
+		C160E9C6278C1310005DDDE5 /* BlurBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C160E9C5278C1310005DDDE5 /* BlurBackgroundView.swift */; };
+		C160E9C9278C1376005DDDE5 /* UIViews+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C160E9C8278C1376005DDDE5 /* UIViews+Layout.swift */; };
+		C160E9CB278C1421005DDDE5 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C160E9CA278C1421005DDDE5 /* UIViewController+Alert.swift */; };
+		C160E9CF278C16DB005DDDE5 /* AirportListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C160E9CE278C16DB005DDDE5 /* AirportListViewController.swift */; };
+		C160E9D2278C17D9005DDDE5 /* AirportTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C160E9D0278C17D9005DDDE5 /* AirportTableViewCell.swift */; };
+		C160E9D3278C17D9005DDDE5 /* AirportTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C160E9D1278C17D9005DDDE5 /* AirportTableViewCell.xib */; };
+		C160E9D6278C1A92005DDDE5 /* AirportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C160E9D5278C1A92005DDDE5 /* AirportViewModel.swift */; };
+		C160E9D9278C1B03005DDDE5 /* AirportDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C160E9D8278C1B03005DDDE5 /* AirportDataModel.swift */; };
+		C160E9DB278C422E005DDDE5 /* AirportDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C160E9DA278C422E005DDDE5 /* AirportDetailViewController.swift */; };
+		C160E9DD278C4272005DDDE5 /* AirportDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C160E9DC278C4272005DDDE5 /* AirportDetailView.swift */; };
+		C160E9DF278C5FCD005DDDE5 /* TestValidAPICallReturns.swift in Sources */ = {isa = PBXBuildFile; fileRef = C160E9DE278C5FCC005DDDE5 /* TestValidAPICallReturns.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C160E9A3278C0EC5005DDDE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C160E984278C0EC3005DDDE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C160E98B278C0EC3005DDDE5;
+			remoteInfo = QantasAirportApp;
+		};
+		C160E9AD278C0EC5005DDDE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C160E984278C0EC3005DDDE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C160E98B278C0EC3005DDDE5;
+			remoteInfo = QantasAirportApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C132B0DD278CF41500BC54C1 /* airport.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = airport.json; sourceTree = "<group>"; };
+		C132B0DF278CF4A800BC54C1 /* TestAirportDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAirportDataModel.swift; sourceTree = "<group>"; };
+		C132B0E1278CF86B00BC54C1 /* SampleTestAirportData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTestAirportData.swift; sourceTree = "<group>"; };
+		C160E98C278C0EC3005DDDE5 /* QantasAirportApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QantasAirportApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C160E98F278C0EC3005DDDE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C160E991278C0EC3005DDDE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C160E993278C0EC3005DDDE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C160E996278C0EC3005DDDE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C160E998278C0EC5005DDDE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C160E99B278C0EC5005DDDE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C160E99D278C0EC5005DDDE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C160E9A2278C0EC5005DDDE5 /* QantasAirportAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QantasAirportAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C160E9A6278C0EC5005DDDE5 /* QantasAirportAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QantasAirportAppTests.swift; sourceTree = "<group>"; };
+		C160E9AC278C0EC5005DDDE5 /* QantasAirportAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QantasAirportAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C160E9B0278C0EC5005DDDE5 /* QantasAirportAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QantasAirportAppUITests.swift; sourceTree = "<group>"; };
+		C160E9B2278C0EC5005DDDE5 /* QantasAirportAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QantasAirportAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C160E9C0278C10BE005DDDE5 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		C160E9C2278C10D2005DDDE5 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		C160E9C5278C1310005DDDE5 /* BlurBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurBackgroundView.swift; sourceTree = "<group>"; };
+		C160E9C8278C1376005DDDE5 /* UIViews+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViews+Layout.swift"; sourceTree = "<group>"; };
+		C160E9CA278C1421005DDDE5 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		C160E9CE278C16DB005DDDE5 /* AirportListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportListViewController.swift; sourceTree = "<group>"; };
+		C160E9D0278C17D9005DDDE5 /* AirportTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportTableViewCell.swift; sourceTree = "<group>"; };
+		C160E9D1278C17D9005DDDE5 /* AirportTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AirportTableViewCell.xib; sourceTree = "<group>"; };
+		C160E9D5278C1A92005DDDE5 /* AirportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportViewModel.swift; sourceTree = "<group>"; };
+		C160E9D8278C1B03005DDDE5 /* AirportDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDataModel.swift; sourceTree = "<group>"; };
+		C160E9DA278C422E005DDDE5 /* AirportDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDetailViewController.swift; sourceTree = "<group>"; };
+		C160E9DC278C4272005DDDE5 /* AirportDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportDetailView.swift; sourceTree = "<group>"; };
+		C160E9DE278C5FCC005DDDE5 /* TestValidAPICallReturns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestValidAPICallReturns.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C160E989278C0EC3005DDDE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C160E99F278C0EC5005DDDE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C160E9A9278C0EC5005DDDE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C160E983278C0EC3005DDDE5 = {
+			isa = PBXGroup;
+			children = (
+				C160E98E278C0EC3005DDDE5 /* QantasAirportApp */,
+				C160E9A5278C0EC5005DDDE5 /* QantasAirportAppTests */,
+				C160E9AF278C0EC5005DDDE5 /* QantasAirportAppUITests */,
+				C160E98D278C0EC3005DDDE5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C160E98D278C0EC3005DDDE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C160E98C278C0EC3005DDDE5 /* QantasAirportApp.app */,
+				C160E9A2278C0EC5005DDDE5 /* QantasAirportAppTests.xctest */,
+				C160E9AC278C0EC5005DDDE5 /* QantasAirportAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C160E98E278C0EC3005DDDE5 /* QantasAirportApp */ = {
+			isa = PBXGroup;
+			children = (
+				C160E9D7278C1AE8005DDDE5 /* Model */,
+				C160E9D4278C1A6C005DDDE5 /* AirportViewModel */,
+				C160E9CD278C1634005DDDE5 /* Controllers */,
+				C160E9CC278C144D005DDDE5 /* Common */,
+				C160E9C7278C1356005DDDE5 /* Extensions */,
+				C160E9C4278C12BE005DDDE5 /* Views */,
+				C160E9BF278C1097005DDDE5 /* Networking */,
+				C160E995278C0EC3005DDDE5 /* Main.storyboard */,
+				C160E998278C0EC5005DDDE5 /* Assets.xcassets */,
+				C160E99A278C0EC5005DDDE5 /* LaunchScreen.storyboard */,
+				C160E99D278C0EC5005DDDE5 /* Info.plist */,
+			);
+			path = QantasAirportApp;
+			sourceTree = "<group>";
+		};
+		C160E9A5278C0EC5005DDDE5 /* QantasAirportAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				C160E9A6278C0EC5005DDDE5 /* QantasAirportAppTests.swift */,
+				C160E9DE278C5FCC005DDDE5 /* TestValidAPICallReturns.swift */,
+				C132B0DF278CF4A800BC54C1 /* TestAirportDataModel.swift */,
+				C132B0E1278CF86B00BC54C1 /* SampleTestAirportData.swift */,
+				C160E9E0278C605E005DDDE5 /* Resource */,
+			);
+			path = QantasAirportAppTests;
+			sourceTree = "<group>";
+		};
+		C160E9AF278C0EC5005DDDE5 /* QantasAirportAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C160E9B0278C0EC5005DDDE5 /* QantasAirportAppUITests.swift */,
+				C160E9B2278C0EC5005DDDE5 /* QantasAirportAppUITestsLaunchTests.swift */,
+			);
+			path = QantasAirportAppUITests;
+			sourceTree = "<group>";
+		};
+		C160E9BF278C1097005DDDE5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C160E9C0278C10BE005DDDE5 /* APIClient.swift */,
+				C160E9C2278C10D2005DDDE5 /* NetworkError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C160E9C4278C12BE005DDDE5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C160E9C5278C1310005DDDE5 /* BlurBackgroundView.swift */,
+				C160E9D0278C17D9005DDDE5 /* AirportTableViewCell.swift */,
+				C160E9DC278C4272005DDDE5 /* AirportDetailView.swift */,
+				C160E9D1278C17D9005DDDE5 /* AirportTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C160E9C7278C1356005DDDE5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C160E9C8278C1376005DDDE5 /* UIViews+Layout.swift */,
+				C160E9CA278C1421005DDDE5 /* UIViewController+Alert.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C160E9CC278C144D005DDDE5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C160E991278C0EC3005DDDE5 /* SceneDelegate.swift */,
+				C160E98F278C0EC3005DDDE5 /* AppDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C160E9CD278C1634005DDDE5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C160E993278C0EC3005DDDE5 /* ViewController.swift */,
+				C160E9CE278C16DB005DDDE5 /* AirportListViewController.swift */,
+				C160E9DA278C422E005DDDE5 /* AirportDetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C160E9D4278C1A6C005DDDE5 /* AirportViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C160E9D5278C1A92005DDDE5 /* AirportViewModel.swift */,
+			);
+			path = AirportViewModel;
+			sourceTree = "<group>";
+		};
+		C160E9D7278C1AE8005DDDE5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C160E9D8278C1B03005DDDE5 /* AirportDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C160E9E0278C605E005DDDE5 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C132B0DD278CF41500BC54C1 /* airport.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C160E98B278C0EC3005DDDE5 /* QantasAirportApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C160E9B6278C0EC5005DDDE5 /* Build configuration list for PBXNativeTarget "QantasAirportApp" */;
+			buildPhases = (
+				C160E988278C0EC3005DDDE5 /* Sources */,
+				C160E989278C0EC3005DDDE5 /* Frameworks */,
+				C160E98A278C0EC3005DDDE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QantasAirportApp;
+			productName = QantasAirportApp;
+			productReference = C160E98C278C0EC3005DDDE5 /* QantasAirportApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C160E9A1278C0EC5005DDDE5 /* QantasAirportAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C160E9B9278C0EC5005DDDE5 /* Build configuration list for PBXNativeTarget "QantasAirportAppTests" */;
+			buildPhases = (
+				C160E99E278C0EC5005DDDE5 /* Sources */,
+				C160E99F278C0EC5005DDDE5 /* Frameworks */,
+				C160E9A0278C0EC5005DDDE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C160E9A4278C0EC5005DDDE5 /* PBXTargetDependency */,
+			);
+			name = QantasAirportAppTests;
+			productName = QantasAirportAppTests;
+			productReference = C160E9A2278C0EC5005DDDE5 /* QantasAirportAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C160E9AB278C0EC5005DDDE5 /* QantasAirportAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C160E9BC278C0EC5005DDDE5 /* Build configuration list for PBXNativeTarget "QantasAirportAppUITests" */;
+			buildPhases = (
+				C160E9A8278C0EC5005DDDE5 /* Sources */,
+				C160E9A9278C0EC5005DDDE5 /* Frameworks */,
+				C160E9AA278C0EC5005DDDE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C160E9AE278C0EC5005DDDE5 /* PBXTargetDependency */,
+			);
+			name = QantasAirportAppUITests;
+			productName = QantasAirportAppUITests;
+			productReference = C160E9AC278C0EC5005DDDE5 /* QantasAirportAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C160E984278C0EC3005DDDE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					C160E98B278C0EC3005DDDE5 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					C160E9A1278C0EC5005DDDE5 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = C160E98B278C0EC3005DDDE5;
+					};
+					C160E9AB278C0EC5005DDDE5 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = C160E98B278C0EC3005DDDE5;
+					};
+				};
+			};
+			buildConfigurationList = C160E987278C0EC3005DDDE5 /* Build configuration list for PBXProject "QantasAirportApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C160E983278C0EC3005DDDE5;
+			productRefGroup = C160E98D278C0EC3005DDDE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C160E98B278C0EC3005DDDE5 /* QantasAirportApp */,
+				C160E9A1278C0EC5005DDDE5 /* QantasAirportAppTests */,
+				C160E9AB278C0EC5005DDDE5 /* QantasAirportAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C160E98A278C0EC3005DDDE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C160E99C278C0EC5005DDDE5 /* LaunchScreen.storyboard in Resources */,
+				C160E9D3278C17D9005DDDE5 /* AirportTableViewCell.xib in Resources */,
+				C160E999278C0EC5005DDDE5 /* Assets.xcassets in Resources */,
+				C160E997278C0EC3005DDDE5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C160E9A0278C0EC5005DDDE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C132B0DE278CF41500BC54C1 /* airport.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C160E9AA278C0EC5005DDDE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C160E988278C0EC3005DDDE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C160E994278C0EC3005DDDE5 /* ViewController.swift in Sources */,
+				C160E9DB278C422E005DDDE5 /* AirportDetailViewController.swift in Sources */,
+				C160E9CF278C16DB005DDDE5 /* AirportListViewController.swift in Sources */,
+				C160E9C6278C1310005DDDE5 /* BlurBackgroundView.swift in Sources */,
+				C160E990278C0EC3005DDDE5 /* AppDelegate.swift in Sources */,
+				C160E992278C0EC3005DDDE5 /* SceneDelegate.swift in Sources */,
+				C160E9C1278C10BE005DDDE5 /* APIClient.swift in Sources */,
+				C160E9DD278C4272005DDDE5 /* AirportDetailView.swift in Sources */,
+				C160E9D6278C1A92005DDDE5 /* AirportViewModel.swift in Sources */,
+				C160E9C3278C10D2005DDDE5 /* NetworkError.swift in Sources */,
+				C160E9D2278C17D9005DDDE5 /* AirportTableViewCell.swift in Sources */,
+				C160E9D9278C1B03005DDDE5 /* AirportDataModel.swift in Sources */,
+				C160E9C9278C1376005DDDE5 /* UIViews+Layout.swift in Sources */,
+				C160E9CB278C1421005DDDE5 /* UIViewController+Alert.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C160E99E278C0EC5005DDDE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C160E9A7278C0EC5005DDDE5 /* QantasAirportAppTests.swift in Sources */,
+				C160E9DF278C5FCD005DDDE5 /* TestValidAPICallReturns.swift in Sources */,
+				C132B0E0278CF4A800BC54C1 /* TestAirportDataModel.swift in Sources */,
+				C132B0E2278CF86B00BC54C1 /* SampleTestAirportData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C160E9A8278C0EC5005DDDE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C160E9B3278C0EC5005DDDE5 /* QantasAirportAppUITestsLaunchTests.swift in Sources */,
+				C160E9B1278C0EC5005DDDE5 /* QantasAirportAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C160E9A4278C0EC5005DDDE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C160E98B278C0EC3005DDDE5 /* QantasAirportApp */;
+			targetProxy = C160E9A3278C0EC5005DDDE5 /* PBXContainerItemProxy */;
+		};
+		C160E9AE278C0EC5005DDDE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C160E98B278C0EC3005DDDE5 /* QantasAirportApp */;
+			targetProxy = C160E9AD278C0EC5005DDDE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C160E995278C0EC3005DDDE5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C160E996278C0EC3005DDDE5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C160E99A278C0EC5005DDDE5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C160E99B278C0EC5005DDDE5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C160E9B4278C0EC5005DDDE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C160E9B5278C0EC5005DDDE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C160E9B7278C0EC5005DDDE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QantasAirportApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qanta.QantasAirportApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C160E9B8278C0EC5005DDDE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QantasAirportApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qanta.QantasAirportApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C160E9BA278C0EC5005DDDE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qanta.QantasAirportAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QantasAirportApp.app/QantasAirportApp";
+			};
+			name = Debug;
+		};
+		C160E9BB278C0EC5005DDDE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qanta.QantasAirportAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QantasAirportApp.app/QantasAirportApp";
+			};
+			name = Release;
+		};
+		C160E9BD278C0EC5005DDDE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qanta.QantasAirportAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QantasAirportApp;
+			};
+			name = Debug;
+		};
+		C160E9BE278C0EC5005DDDE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.qanta.QantasAirportAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QantasAirportApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C160E987278C0EC3005DDDE5 /* Build configuration list for PBXProject "QantasAirportApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C160E9B4278C0EC5005DDDE5 /* Debug */,
+				C160E9B5278C0EC5005DDDE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C160E9B6278C0EC5005DDDE5 /* Build configuration list for PBXNativeTarget "QantasAirportApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C160E9B7278C0EC5005DDDE5 /* Debug */,
+				C160E9B8278C0EC5005DDDE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C160E9B9278C0EC5005DDDE5 /* Build configuration list for PBXNativeTarget "QantasAirportAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C160E9BA278C0EC5005DDDE5 /* Debug */,
+				C160E9BB278C0EC5005DDDE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C160E9BC278C0EC5005DDDE5 /* Build configuration list for PBXNativeTarget "QantasAirportAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C160E9BD278C0EC5005DDDE5 /* Debug */,
+				C160E9BE278C0EC5005DDDE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C160E984278C0EC3005DDDE5 /* Project object */;
+}
